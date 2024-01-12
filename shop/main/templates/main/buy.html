@@ -1,0 +1,23 @@
+{% extends 'main/shablon.html' %}
+
+{% block title %}Покупка{% endblock %}
+
+{% block content %}
+<div class="feature">
+    <h1>Заполните данные</h1>
+        <form method="post">
+            {% csrf_token %}
+            <h6>Выберите товар: {{ form.tovar }}</h6><br>
+            <h6>Выберите размер: {{ form.razmer }}</h6><br>
+            <h6>Количество: {{ form.kol }}</h6><br>
+            <h6>Электронную почту: {{ form.email }}</h6><br>
+            <h6>ФИО: {{ form.fio }}</h6><br>
+            <h6>дату заказа: {{ form.date }}</h6><br>
+            <h6>Введите адрес доставки (ТОЛЬКО ПО РОССИИ): {{ form.text }}</h6><br>
+            <span>{{ error }}</span>
+            <button type="submit" class="btn btn-info">Завершить заказ</button>
+        </form>
+</div>
+
+
+{% endblock %}

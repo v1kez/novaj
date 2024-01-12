@@ -1,0 +1,31 @@
+{% extends 'main/shablon.html' %}
+
+{% block title %}История заказов{% endblock %}
+
+{% block content %}
+<div class="features" id="features">
+    <div id="myDiv">
+    <h1>Отправьте заказы</h1>
+     {% for el in history %}
+            <div class="alert alert-warning" id="alert-warning">
+                <h3>{{ el.date }}</h3>
+                <p>ТОВАР: {{ el.tovar }}</p>
+                <p>РАЗМЕР: {{ el.razmer }}</p>
+                <p>ЭЛЕКТРОННАЯ ПОЧТА: {{ el.email }}</p>
+                <p>ФИО: {{ el.fio }}</p>
+                <p>АДРЕС ДОСТАВКИ: {{ el.text }}</p>
+                <button id="my-button">Отправленно</button>
+            </div>
+        <script>
+
+document.getElementById("my-button").addEventListener("click", function() {
+            document.querySelector(`.alert`).style.backgroundColor = "red";
+        });
+    </script>
+        {% endfor %}
+    </div>
+</div>
+
+
+
+{% endblock %}

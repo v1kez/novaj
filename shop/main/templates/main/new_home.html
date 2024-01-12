@@ -1,0 +1,16 @@
+{% extends 'main/shablon.html' %}
+
+{% block title %}Новости{% endblock %}
+
+{% block content %}
+<div class="features">
+    <h1>Новости</h1>
+        {% for el in new %}
+            <div class="alert alert-warning">
+                <h3>{{ el.title }}</h3>
+                <p>{{ el.anons }}</p>
+                <span>{{ el.date }}</span>
+            </div>
+        {% endfor %}
+</div>
+{% endblock %}

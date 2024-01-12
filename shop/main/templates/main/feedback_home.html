@@ -1,0 +1,20 @@
+{% extends 'main/shablon.html' %}
+
+{% block title %}Отзывы{% endblock %}
+
+{% block content %}
+<div class="features ">
+    <h1>Отзывы от покупателей </h1>
+        {% for el in feedback %}
+            <div class="alert alert-warning">
+                <h3>{{ el.fio }}</h3>
+                <p>{{ el.text }}</p>
+                <span>{{ el.date }}</span>
+            </div>
+        {% endfor %}
+
+</div>
+
+<a href="{% url 'create' %}" class="link link1"><li><button class="btn btn-info">+ Добавить отзыв</button></li></a>
+
+{% endblock %}

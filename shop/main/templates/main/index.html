@@ -1,0 +1,50 @@
+{% extends 'main/shablon.html' %}
+{% load static %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+<div class="features">
+    <h1>{{ title }}</h1>
+        <div class="nike">
+            <img src="{% static 'main/img/1.png' %}" alt="">
+            <h3>Штаны Nike</h3>
+            <p>Просто спортивные штаны нике</p>
+            <span>1500p</span>
+            {% if user.is_authenticated %}
+				 <button class="btn btn-info"><a href="{% url 'buy' %}">Купить</a></button>
+				 {% else %}
+				  <button class="btn btn-info"><a href="{% url 'login' %}">Войти</a></li></button>
+				 {% endif %}
+        </div>
+        <br>
+        <div class="nike">
+            <img src="{% static 'main/img/2.png' %}">
+            <h3>Кофта СЛОН</h3>
+            <p>Оверсайз худи Anteater с кармашком из <br>двухниточного футера, плотность изделия 220 грамм <br>(худи повышенной плотности).
+<br>Материал: 92% хлопок + 8% эластан.<br>
+Цвет: черный.</p>
+            <span>3900p</span>
+            {% if user.is_authenticated %}
+				 <button class="btn btn-info"><a href="{% url 'buy' %}">Купить</a></button>
+				 {% else %}
+				  <button class="btn btn-info"><a href="{% url 'login' %}">Войти</a></li></button>
+				 {% endif %}
+        </div>
+    <br>
+        <div class="nike">
+            <img src="{% static 'main/img/futbolka-yamayka-bob-marli-d0f62f33.png' %}">
+            <h3>Футболка-Ямайка</h3>
+            <p>Легендарная футболка-ямайка с<br> легендарным человеком(Боб Марли). Эксклюзив. <br>Бери пока можешь. Нет денег - найди. Ограбь банк.</p>
+            <span>5000p</span>
+            {% if user.is_authenticated %}
+				 <button class="btn btn-info"><a href="{% url 'buy' %}">Купить</a></button>
+				 {% else %}
+				  <button class="btn btn-info"><a href="{% url 'login' %}">Войти</a></li></button>
+				 {% endif %}
+
+        </div>
+</div>
+
+
+{% endblock %}

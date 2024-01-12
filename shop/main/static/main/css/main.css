@@ -1,0 +1,152 @@
+body{
+    background: #208380;
+}
+
+aside{
+    float: left;
+    background:#165A58;
+    width: 20%;
+    padding: 2.5%;
+    height:100vh;
+    color: #fff;
+    border-right: 5px solid #4d4d4d;
+    position: fixed;
+}
+
+aside img{
+    width: 80px;
+    float: left;
+}
+
+aside .logo{
+    font-size: 40px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+aside h3{
+    margin-top: 50px;
+}
+
+aside ul{list-style: none}
+aside ul li {
+    color: #fff;
+    display: block;
+    margin-top:20px;
+    transition: transform .6s ease;
+}
+
+.last{
+color: #fff;
+    display: block;
+    margin-top:20px;
+    transition: transform .6s ease;
+}
+
+aside ul li:hover, aside ul a:hover {
+    color:#D1E231;
+    transform: scale(1.05);
+}
+
+.link, .last {
+  text-decoration: none;
+  color: #fff;
+}
+
+main .features{
+    float: left;
+    color: #fff;
+    margin-top: 100px;
+    text-align: center;
+    width: 100%;
+}
+
+main .features h1{font-size: 50px;}
+
+
+.alert-warning{
+    float: left;
+    clear:both;
+    width: 500px;
+    margin: 20px 34%;
+    text-align:center;
+    color:black;
+    background:#80e0dd;
+}
+
+.link1{
+    display: block;
+     text-align: center;
+}
+
+.form{
+    margin-left:32%;
+    max-width:500px;
+    margin-top:50px;
+}
+
+.textar{
+     font-size: 16px;
+    color: #fff;
+    text-align: center;
+    padding-top: 100px;
+    width: 100%;
+    padding-left: 350px;
+    padding-right: 50px;
+}
+
+.nike{
+     font-size: 16px;
+    color: #fff;
+    text-align: center;
+    padding-top: 100px;
+    width: 100%;
+    padding-left: 350px;
+    padding-right: 50px;
+}
+
+.nike img{
+    width:400px;
+    height:400px;
+}
+
+.link2{
+    width:100px;
+}
+
+.login{
+    padding-top: 100px;
+   margin-left:32%;
+
+
+}
+
+.feature{
+    margin-left:32%;
+    max-width:500px;
+    padding-top:50px;
+}
+
+label {
+  font-family: sans-serif;
+  font-size: 1rem;
+  padding-right: 10px;
+}
+
+select {
+  font-size: 0.9rem;
+  padding: 2px 5px;
+  width: 500px;
+}
+
+.vse{
+    margin-left:40%;
+    max-width:500px;
+    padding-top:50px;
+    color: #fff;
+}
+
+input{
+width: 500px;
+}
+
