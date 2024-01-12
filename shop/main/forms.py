@@ -62,18 +62,3 @@ class UserCreationForm(UserCreationForm):
         model = User
         fields = ('username', 'email', 'password1', 'password2',)
 
-        widgets = {
-
-            "username": TextInput(attrs={
-                'class': 'form-control',
-            }),
-            "email": TextInput(attrs={
-                'class': 'form-control',
-            }),
-            "password1": TextInput(attrs={
-                'class': 'form-control',
-            }),
-            "password2": TextInput(attrs={
-                'class': 'form-control',
-            }),
-        }
